@@ -5,27 +5,27 @@
 
 Вариант 1
 
-ENV['VAGRANT_SERVER_URL'] = 'https://vagrant.elab.pro'
+ENV['VAGRANT_SERVER_URL'] = 'https://vagrant.elab.pro'  
 
-Vagrant.configure("2") do |config|
+Vagrant.configure("2") do |config|  
  
-  config.vm.provider "virtualbox" do |vb|
-      vb.gui = false
-      vb.memory=256
-      vb.cpus=1
-      vb.check_guest_additions=false
-  config.vm.box_check_update=false
-  config.vm.box="ubuntu/trusty64"
- end
+  config.vm.provider "virtualbox" do |vb|  
+      vb.gui = false  
+      vb.memory=256  
+      vb.cpus=1  
+      vb.check_guest_additions=false  
+  config.vm.box_check_update=false  
+  config.vm.box="ubuntu/trusty64"  
+ end  
 
-(1..$mach_quant).each do |i|
-    config.vm.define "node#{i}" do |node|
-        node.vm.network "public_network", ip: "192.168.1.#{24+i}"
-        node.vm.hostname = "node#{i}"
-    end
-end
+(1..$mach_quant).each do |i|  
+    config.vm.define "node#{i}" do |node|  
+        node.vm.network "public_network", ip: "192.168.1.#{24+i}"  
+        node.vm.hostname = "node#{i}"  
+    end  
+end  
   
-end
+end  
 
 ![image](https://github.com/user-attachments/assets/37cd480b-cb27-44bd-ac51-6c997d7ac653)
 
