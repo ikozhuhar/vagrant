@@ -10,10 +10,10 @@ ENV['VAGRANT_SERVER_URL'] = 'https://vagrant.elab.pro'
 Vagrant.configure("2") do |config|  
  
   config.vm.provider "virtualbox" do |vb|  
-      vb.gui = false  
-      vb.memory=256  
-      vb.cpus=1  
-      vb.check_guest_additions=false  
+       vb.gui = false  
+       vb.memory=256  
+       vb.cpus=1  
+       vb.check_guest_additions=false  
   config.vm.box_check_update=false  
   config.vm.box="ubuntu/trusty64"  
  end  
