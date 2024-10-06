@@ -79,4 +79,5 @@ end
 
 #### Дополнительные материалы
 
-1. https://help.ubuntu.ru/wiki/vagrant
+1. https://www.vagrantup.com/
+2. https://help.ubuntu.ru/wiki/vagrant
