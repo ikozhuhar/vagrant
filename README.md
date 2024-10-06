@@ -10,7 +10,7 @@ ENV['VAGRANT_SERVER_URL'] = 'https://vagrant.elab.pro'
 Vagrant.configure("2") do |config|  
  
   config.vm.provider "virtualbox" do |vb|  
-       vb.gui = false  
+  vb.gui = false  
        vb.memory=256  
        vb.cpus=1  
        vb.check_guest_additions=false  
